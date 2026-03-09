@@ -1,0 +1,26 @@
+body {
+    background-color: #80808075;
+    margin: 0;
+}
+header{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 2rem;
+}
+main{
+    border: 3px solid #ff0000;
+}
+article{
+    background-color: #ffffff;
+    padding: 1.3rem;
+    margin:.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: .8rem;
+}
+footer{
+    padding: 1rem;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
