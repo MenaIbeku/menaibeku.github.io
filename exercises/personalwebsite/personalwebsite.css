@@ -216,15 +216,24 @@ footer {
 
 
 .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 60px 20px;
+    min-height: 60vh; /* Centers content vertically on the page */
 }
 
+/* Updated for responsiveness */
 .contact-links {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* CRITICAL: Allows buttons to move to the next line on phones */
     gap: 20px;
     margin-top: 30px;
+    width: 100%;
+    max-width: 800px;
 }
 
 .contact-links a {
@@ -234,17 +243,18 @@ footer {
     padding: 15px 25px;
     border-radius: 10px;
     transition: 0.3s;
-    min-width: 150px;  
+    flex: 1; /* Allows buttons to grow/shrink equally */
+    min-width: 150px; /* Ensures buttons don't get too skinny */
+    max-width: 250px; /* Ensures buttons don't get too wide on desktop */
     text-align: center;  
     display: inline-block;
+    font-size: 1.2rem; /* Scalable font size */
 }
 
 .contact-links a:hover {
     background-color: palegoldenrod;
     color: black;
 }
-
-
 @media (max-width: 768px) {
     main {
         grid-template-columns: 1fr;
